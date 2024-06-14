@@ -8,9 +8,9 @@ namespace HandyHero.Services.Infrastructure
         bool Login(string email, string password);
         bool CreateAdmin(Admin admin);
         //IEnumerable<Customer> GetCustomers();
-        //IEnumerable<FieldWorker> GetFieldWorkers();
+        IEnumerable<FieldWorker> GetFieldWorkers();
 
-       // public bool BlockFieldWorker(FieldWorker fieldWorker);
+        public bool BlockFieldWorker(FieldWorker fieldWorker);
         public bool IsAdmin(Admin admin);
 
         public ClaimsPrincipal validateToken(string token);
@@ -18,8 +18,8 @@ namespace HandyHero.Services.Infrastructure
         public Admin GetAdminByEmail(string Email);
         public Admin GetAdminById(int Id);
 
-        //public bool AcceptFieldWorker(string fieldworkerEmail, int adminId);
-        //public bool RejectFieldWorker(string fieldWorkerId, int adminId);
+        public bool AcceptFieldWorker(string fieldworkerEmail, int adminId);
+        public bool RejectFieldWorker(string fieldWorkerId, int adminId);
 
         //public List<ComplaintView> gettAllComplaints();
 

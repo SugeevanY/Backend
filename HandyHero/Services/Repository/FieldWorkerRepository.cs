@@ -16,7 +16,7 @@ namespace HandyHero.Services.Repository
             _context = context;
             _cloudinary = cloudinary;
         }
-       /* public bool acceptProject(Project project)
+       public bool acceptProject(Project project)
         {
             try
             {
@@ -32,7 +32,7 @@ namespace HandyHero.Services.Repository
             }
         }
 
-        public bool createComplaint(Complaint complaint)
+        /*public bool createComplaint(Complaint complaint)
         {
             try
             {
@@ -58,11 +58,11 @@ namespace HandyHero.Services.Repository
             return _context.FieldWorker.FirstOrDefault(x => x.Email == email);
         }
 
-        /*public ICollection<Project> GetProjects(int id)
+        public ICollection<Project> GetProjects(int id)
         {
             var projects = _context.Project.Where(p => p.ProjectWorker == id).ToList();
             return projects;
-        }   */
+        }   
        
 
         public bool isUser(string email)
@@ -107,7 +107,7 @@ namespace HandyHero.Services.Repository
             }
         }
 
-        /*public bool rejectProject(Project project)
+        public bool rejectProject(Project project)
         {
             try
             {
@@ -122,7 +122,7 @@ namespace HandyHero.Services.Repository
                 return false;
             }
         }
-        */
+        
         public bool signUp(FieldWorker fieldWorker)
         {
             try

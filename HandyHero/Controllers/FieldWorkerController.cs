@@ -99,7 +99,7 @@ namespace HandyHero.Controllers
             return Ok(new { token = tokenHandler.WriteToken(token), Id = loggedInWorker.Id });
         }
 
-        /*[HttpPatch("acceptProject")]
+        [HttpPatch("acceptProject")]
         public IActionResult acceptProject(Project project)
         {
 
@@ -142,10 +142,10 @@ namespace HandyHero.Controllers
             {
                 return BadRequest("There is no project");
             }
-        }*/
+        }
 
 
-        [HttpPost("complaint")]
+        /*[HttpPost("complaint")]
         public IActionResult makeComplaint([FromBody] ComplaintRequest complaint)
         {
             if (!ModelState.IsValid)
@@ -181,6 +181,6 @@ namespace HandyHero.Controllers
                 Console.WriteLine("Something went wrong while creating complaint");
                 return BadRequest("Error in create complaint");
             }
-        }
+        }*/
     }
 }
