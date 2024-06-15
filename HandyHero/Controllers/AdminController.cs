@@ -187,13 +187,13 @@ namespace HandyHero.Controllers
                 return BadRequest();
             }
         }
-        /*
+        
         [HttpGet("complaints")]
         public IActionResult getAllComplaints()
         {
             var Complaints = _admin.gettAllComplaints();
             return Ok(Complaints);
-        }*/
+        }
 
     }
 }

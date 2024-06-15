@@ -145,7 +145,7 @@ namespace HandyHero.Controllers
         }
 
 
-        /*[HttpPost("complaint")]
+        [HttpPost("complaint")]
         public IActionResult makeComplaint([FromBody] ComplaintRequest complaint)
         {
             if (!ModelState.IsValid)
@@ -181,6 +181,6 @@ namespace HandyHero.Controllers
                 Console.WriteLine("Something went wrong while creating complaint");
                 return BadRequest("Error in create complaint");
             }
-        }*/
+        }
     }
 }
