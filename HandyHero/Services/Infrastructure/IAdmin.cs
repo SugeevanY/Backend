@@ -1,4 +1,5 @@
-﻿using HandyHero.Models;
+﻿using HandyHero.DTO;
+using HandyHero.Models;
 using System.Security.Claims;
 
 namespace HandyHero.Services.Infrastructure
@@ -21,7 +22,7 @@ namespace HandyHero.Services.Infrastructure
         public bool AcceptFieldWorker(string fieldworkerEmail, int adminId);
         public bool RejectFieldWorker(string fieldWorkerId, int adminId);
 
-        //public List<ComplaintView> gettAllComplaints();
+        public List<ComplaintView> gettAllComplaints();
 
         public bool Logout();
     }

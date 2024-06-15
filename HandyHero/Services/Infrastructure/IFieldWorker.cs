@@ -16,7 +16,7 @@ namespace HandyHero.Services.Infrastructure
 
         public ICollection<Project> GetProjects(int id);
 
-        //public bool createComplaint(Complaint complaint);
+        public bool createComplaint(Complaint complaint);
 
         public FieldWorker findFieldWorkerById(int Id);
 
