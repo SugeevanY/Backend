@@ -23,7 +23,7 @@ namespace HandyHero.Services.Repository
             _cloudinary = cloudinary;
         }
 
-        /*public bool BlockFieldWorker(FieldWorker fieldWorker)
+        public bool BlockFieldWorker(FieldWorker fieldWorker)
         {
             try
             {
@@ -36,7 +36,7 @@ namespace HandyHero.Services.Repository
                 Console.WriteLine(ex.Message);
                 return false;
             }
-        }*/
+        }
 
         public bool CreateAdmin(Admin admin)
         {
@@ -57,13 +57,13 @@ namespace HandyHero.Services.Repository
          /*public IEnumerable<Customer> GetCustomers()
          {
              return _context.Customer;
-         }
+         }*/
 
          public IEnumerable<FieldWorker> GetFieldWorkers()
          {
              return _context.FieldWorker;
          }
-        */
+        
         public bool IsAdmin(Admin admin)
         {
             return _context.Admin.Any(a => a.Email == admin.Email);
@@ -144,7 +144,7 @@ namespace HandyHero.Services.Repository
             return _context.Admin.FirstOrDefault(x => x.Id == Id);
         }
 
-        /* public bool AcceptFieldWorker(string fieldworkerEmail, int adminId)
+        public bool AcceptFieldWorker(string fieldworkerEmail, int adminId)
          {
              try
              {
@@ -200,7 +200,7 @@ namespace HandyHero.Services.Repository
              }
          }
 
-         public List<ComplaintView> gettAllComplaints()
+         /*public List<ComplaintView> gettAllComplaints()
          {
              ComplaintRepository comp = new ComplaintRepository(_context);
              return comp.GetComplaints();
@@ -209,4 +209,5 @@ namespace HandyHero.Services.Repository
 
     }
 }
+
 
