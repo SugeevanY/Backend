@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HandyHero")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1582cee927fb3fe688703797b17d56dd3016cf91")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d4c8dc628b57c21bbbfe413f5657841b57ce3796")]
 [assembly: System.Reflection.AssemblyProductAttribute("HandyHero")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HandyHero")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
