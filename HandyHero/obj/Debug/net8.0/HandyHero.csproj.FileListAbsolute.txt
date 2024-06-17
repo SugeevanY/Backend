@@ -144,3 +144,14 @@ C:\Users\user\Desktop\Second Year Project\Backend\HandyHero\HandyHero\bin\Debug\
 C:\Users\user\Desktop\Second Year Project\Backend\HandyHero\HandyHero\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\user\Desktop\Second Year Project\Backend\HandyHero\HandyHero\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\user\Desktop\Second Year Project\Backend\HandyHero\HandyHero\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+C:\Users\Viyukshana\Desktop\new backend\HandyHero\obj\Debug\net8.0\HandyHero.csproj.AssemblyReference.cache
+C:\Users\Viyukshana\Desktop\new backend\HandyHero\obj\Debug\net8.0\HandyHero.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Viyukshana\Desktop\new backend\HandyHero\obj\Debug\net8.0\HandyHero.AssemblyInfoInputs.cache
+C:\Users\Viyukshana\Desktop\new backend\HandyHero\obj\Debug\net8.0\HandyHero.AssemblyInfo.cs
+C:\Users\Viyukshana\Desktop\new backend\HandyHero\obj\Debug\net8.0\HandyHero.csproj.CoreCompileInputs.cache
+C:\Users\Viyukshana\Desktop\new backend\HandyHero\obj\Debug\net8.0\HandyHero.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Viyukshana\Desktop\new backend\HandyHero\obj\Debug\net8.0\HandyHero.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Viyukshana\Desktop\new backend\HandyHero\obj\Debug\net8.0\HandyHero.sourcelink.json
+C:\Users\Viyukshana\Desktop\new backend\HandyHero\obj\Debug\net8.0\HandyHero.dll
+C:\Users\Viyukshana\Desktop\new backend\HandyHero\obj\Debug\net8.0\refint\HandyHero.dll
+C:\Users\Viyukshana\Desktop\new backend\HandyHero\obj\Debug\net8.0\HandyHero.pdb
