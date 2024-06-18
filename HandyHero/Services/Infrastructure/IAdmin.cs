@@ -8,7 +8,7 @@ namespace HandyHero.Services.Infrastructure
     {
         bool Login(string email, string password);
         bool CreateAdmin(Admin admin);
-        //IEnumerable<Customer> GetCustomers();
+        IEnumerable<Customer> GetCustomers();
         IEnumerable<FieldWorker> GetFieldWorkers();
 
         public bool BlockFieldWorker(FieldWorker fieldWorker);

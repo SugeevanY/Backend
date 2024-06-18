@@ -145,7 +145,7 @@ namespace HandyHero.Controllers
             }
         }
 
-       /* [HttpGet("customers")]
+        [HttpGet("customers")]
         public IActionResult GetCustomers()
         {
             var customers = _admin.GetCustomers();
@@ -158,7 +158,7 @@ namespace HandyHero.Controllers
             {
                 return NotFound();
             }
-        }*/
+        }
 
         [HttpPatch("acceptFieldWorker")]
         public IActionResult acceptFieldWorker([FromQuery] int adminId, string email)

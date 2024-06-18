@@ -1,6 +1,7 @@
 ﻿using CloudinaryDotNet;
 using HandyHero.Common;
 using HandyHero.Data;
+using HandyHero.DTO;
 using HandyHero.Models;
 using HandyHero.Services.Infrastructure;
 using Microsoft.AspNetCore.Identity;
@@ -54,10 +55,10 @@ namespace HandyHero.Services.Repository
             }
         }
 
-         /*public IEnumerable<Customer> GetCustomers()
+         public IEnumerable<Customer> GetCustomers()
          {
              return _context.Customer;
-         }*/
+         }
 
          public IEnumerable<FieldWorker> GetFieldWorkers()
          {
@@ -200,12 +201,17 @@ namespace HandyHero.Services.Repository
              }
          }
 
-         /*public List<ComplaintView> gettAllComplaints()
-         {
-             ComplaintRepository comp = new ComplaintRepository(_context);
-             return comp.GetComplaints();
-         }
-     }*/
+        public List<ComplaintView> gettAllComplaints()
+        {
+            throw new NotImplementedException();
+        }
+
+        /*public List<ComplaintView> gettAllComplaints()
+        {
+            ComplaintRepository comp = new ComplaintRepository(_context);
+            return comp.GetComplaints();
+        }
+    }*/
 
     }
 }
