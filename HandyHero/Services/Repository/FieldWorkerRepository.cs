@@ -32,7 +32,7 @@ namespace HandyHero.Services.Repository
             }
         }
 
-        /*public bool createComplaint(Complaint complaint)
+        public bool createComplaint(Complaint complaint)
         {
             try
             {
@@ -45,7 +45,7 @@ namespace HandyHero.Services.Repository
                 Console.WriteLine(ex.ToString());
                 return false;
             }
-        }*/
+        }
        
         public FieldWorker findFieldWorkerById(int Id)
         {

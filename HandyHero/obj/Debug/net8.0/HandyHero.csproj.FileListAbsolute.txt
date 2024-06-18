@@ -155,3 +155,4 @@ C:\Users\Viyukshana\Desktop\new backend\HandyHero\obj\Debug\net8.0\HandyHero.sou
 C:\Users\Viyukshana\Desktop\new backend\HandyHero\obj\Debug\net8.0\HandyHero.dll
 C:\Users\Viyukshana\Desktop\new backend\HandyHero\obj\Debug\net8.0\refint\HandyHero.dll
 C:\Users\Viyukshana\Desktop\new backend\HandyHero\obj\Debug\net8.0\HandyHero.pdb
+C:\Users\user\Desktop\Second Year Project\Backend\HandyHero\HandyHero\obj\Debug\net8.0\HandyHero.sourcelink.json
