@@ -9,80 +9,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
-/*var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
-#region Configure CORS
-
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy("CustomPolicy", x => x.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
-});
-#endregion
-
-#region Configure Database
-
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connectionString));
-
-#endregion
-
-
-var jwtIsUser = builder.Configuration.GetSection("Jwt:Issuer").Get<string>();
-var jwtKey = builder.Configuration.GetSection("Jwt:Key").Get<string>();
-
-builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-    .AddJwtBearer(options =>
-    {
-        options.TokenValidationParameters = new TokenValidationParameters
-        {
-            ValidateIssuer = true,
-            ValidateAudience = true,
-            ValidateLifetime = true,
-            ValidateIssuerSigningKey = true,
-            ValidIssuer = jwtIsUser,
-            ValidAudience = jwtIsUser,
-            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtKey))
-        };
-    });
-
-builder.Services.AddSingleton<Cloudinary>(new Cloudinary(new Account(
-    builder.Configuration["Cloudinary:CloudName"],
-    builder.Configuration["Cloudinary:ApiKey"],
-    builder.Configuration["Cloudinary:ApiSecret"]
-)));
-
-
-builder.Services.AddScoped<IAdmin, AdminRepository>();
-builder.Services.AddScoped<ICustomer, CustomerRepository>();
-builder.Services.AddScoped<IFieldWorker, FieldWorkerRepository>();
-
-// Configure CORS
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy("CustomPolicy", x => x.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
-});
-
-var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
-
-app.UseCors("CustomPolicy");
-
-app.UseHttpsRedirection();
-
-app.UseAuthentication(); // Added authentication middleware
-app.UseAuthorization();
-
-app.MapControllers();
-
-app.Run();*/
-
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -127,6 +53,7 @@ builder.Services.AddSingleton<Cloudinary>(new Cloudinary(new Account(
 builder.Services.AddScoped<IAdmin, AdminRepository>();
 builder.Services.AddScoped<ICustomer, CustomerRepository>();
 builder.Services.AddScoped<IFieldWorker, FieldWorkerRepository>();
+builder.Services.AddScoped<INotification, NotificationRepository>();
 
 // Configure CORS
 builder.Services.AddCors(options =>
