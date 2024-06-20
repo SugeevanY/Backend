@@ -201,19 +201,16 @@ namespace HandyHero.Services.Repository
              }
          }
 
-        public List<ComplaintView> gettAllComplaints()
-        {
-            throw new NotImplementedException();
-        }
+        
 
-        /*public List<ComplaintView> gettAllComplaints()
+        public List<ComplaintView> gettAllComplaints()
         {
             ComplaintRepository comp = new ComplaintRepository(_context);
             return comp.GetComplaints();
         }
-    }*/
+    }
 
     }
-}
+
 
 

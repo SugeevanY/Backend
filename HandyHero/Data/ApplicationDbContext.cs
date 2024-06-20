@@ -18,5 +18,6 @@ namespace HandyHero.Data
         public DbSet<Customer> Customer { get; set; }
         public DbSet<FieldWorker> FieldWorker { get; set; }
        public DbSet<Project> Project { get; set; }
+        public DbSet<Notification> Notifications { get; set; }
     }
 }
