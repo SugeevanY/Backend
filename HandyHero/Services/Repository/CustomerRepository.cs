@@ -1,12 +1,10 @@
-
-using backend.Services.Infrastructure;
 using HandyHero.Common;
 using HandyHero.Data;
 using HandyHero.Models;
+using HandyHero.Services.Infrastructure;
 using HandyHero.Services.Repository;
 
-
-namespace backend.Services.Repository
+namespace HandyHero.Services.Repository
 {
     public class CustomerRepository : ICustomer
     {
@@ -17,7 +15,9 @@ namespace backend.Services.Repository
             _context = context;
         }
 
-        public bool CreateComplaint(Complaint complaint)
+  
+
+        public bool createComplaint(Complaint complaint)
         {
             try
             {
@@ -32,12 +32,9 @@ namespace backend.Services.Repository
             }
         }
 
-        public bool createComplaint(Complaint complaint)
-        {
-            throw new NotImplementedException();
-        }
 
-        public bool CreateProject(Project project)
+
+        public bool createProject(Project project)
         {
             try
             {
@@ -49,11 +46,6 @@ namespace backend.Services.Repository
             {
                 return false;
             }
-        }
-
-        public bool createProject(Project project)
-        {
-            throw new NotImplementedException();
         }
 
         public Customer findCustomerById(int Id)
@@ -151,8 +143,6 @@ namespace backend.Services.Repository
             }
         }
 
-       
-
         public bool SignOut()
         {
             try
@@ -182,22 +172,6 @@ namespace backend.Services.Repository
                 return false;
             }
         }
-
-      
-
-        Customer ICustomer.findCustomerById(int Id)
-        {
-            throw new NotImplementedException();
-        }
-
-        IEnumerable<FieldWorker> ICustomer.findWorker(string WorkType)
-        {
-            throw new NotImplementedException();
-        }
-
-        Customer ICustomer.getCustomerByMail(string Email)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
+

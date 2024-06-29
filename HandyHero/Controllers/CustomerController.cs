@@ -1,7 +1,6 @@
-using backend.Services.Infrastructure;
-using backend.Services.Repository;
 using HandyHero.DTO;
 using HandyHero.Models;
+using HandyHero.Services.Infrastructure;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
@@ -9,7 +8,7 @@ using System.Runtime.ConstrainedExecution;
 using System.Security.Claims;
 using System.Text;
 
-namespace backend.Controllers
+namespace HandyHero.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
@@ -88,7 +87,7 @@ namespace backend.Controllers
         [HttpPost("requestWork")]
         public IActionResult requestWork([FromBody] Project project)
         {
-            var result = _customer.CreateProject(project);
+            var result = _customer.createProject(project);
             if (result)
             {
                 return Ok(result);
@@ -140,7 +139,7 @@ namespace backend.Controllers
             complaint1.ComplaintMessage = complaint.complaint;
             complaint1.TimeStamp = DateTime.Now;
 
-            var result = _customer.CreateComplaint(complaint1);
+            var result = _customer.createComplaint(complaint1);
             if (result)
             {
                 return Ok(result);

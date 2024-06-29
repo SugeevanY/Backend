@@ -1,5 +1,3 @@
-using backend.Services.Infrastructure;
-using backend.Services.Repository;
 using CloudinaryDotNet;
 using HandyHero.Data;
 using HandyHero.Services.Infrastructure;
