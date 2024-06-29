@@ -5,7 +5,7 @@ using HandyHero.Services.Infrastructure;
 
 namespace HandyHero.Services.Repository
 {
-    public class ComplaintRepository:IComplaint
+    public class ComplaintRepository : IComplaint
     {
         private ApplicationDbContext _context;
         public ComplaintRepository(ApplicationDbContext context)
@@ -55,3 +55,4 @@ namespace HandyHero.Services.Repository
         }
     }
 }
+

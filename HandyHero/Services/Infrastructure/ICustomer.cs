@@ -1,6 +1,6 @@
 using HandyHero.Models;
 
-namespace backend.Services.Infrastructure
+namespace HandyHero.Services.Infrastructure
 {
     public interface ICustomer
     {
@@ -10,10 +10,10 @@ namespace backend.Services.Infrastructure
         public bool ResetPassword(Customer customer);
         public IEnumerable<Object> getMyProject(int Id);
         public IEnumerable<FieldWorker> findWorker(string WorkType);
-        public bool CreateProject(Project project);
+        public bool createProject(Project project);
 
         public Customer getCustomerByMail(string Email);
-        public bool CreateComplaint(Complaint complaint);
+        public bool createComplaint(Complaint complaint);
 
         public Customer findCustomerById(int Id);
        

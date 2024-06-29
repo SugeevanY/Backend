@@ -4,6 +4,7 @@ using HandyHero.Common;
 using HandyHero.Data;
 using HandyHero.Models;
 using HandyHero.Services.Infrastructure;
+using HandyHero.Services.Repository;
 
 namespace HandyHero.Services.Repository
 {
@@ -16,7 +17,7 @@ namespace HandyHero.Services.Repository
             _context = context;
             _cloudinary = cloudinary;
         }
-       public bool acceptProject(Project project)
+        public bool acceptProject(Project project)
         {
             try
             {
@@ -46,7 +47,7 @@ namespace HandyHero.Services.Repository
                 return false;
             }
         }
-       
+
         public FieldWorker findFieldWorkerById(int Id)
         {
             FieldWorker worker = _context.FieldWorker.FirstOrDefault(f => f.Id == Id);
@@ -62,8 +63,8 @@ namespace HandyHero.Services.Repository
         {
             var projects = _context.Project.Where(p => p.ProjectWorker == id).ToList();
             return projects;
-        }   
-       
+        }
+
 
         public bool isUser(string email)
         {
@@ -122,7 +123,7 @@ namespace HandyHero.Services.Repository
                 return false;
             }
         }
-        
+
         public bool signUp(FieldWorker fieldWorker)
         {
             try
@@ -197,7 +198,5 @@ namespace HandyHero.Services.Repository
             }
 
         }
-
-       
     }
 }

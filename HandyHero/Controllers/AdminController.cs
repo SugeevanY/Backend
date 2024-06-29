@@ -13,6 +13,7 @@ namespace HandyHero.Controllers
     [ApiController]
     public class AdminController : ControllerBase
     {
+
         private readonly IAdmin _admin;
         private IConfiguration _config;
 

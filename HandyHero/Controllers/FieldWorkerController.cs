@@ -148,6 +148,7 @@ namespace HandyHero.Controllers
         [HttpPost("complaint")]
         public IActionResult makeComplaint([FromBody] ComplaintRequest complaint)
         {
+            Console.WriteLine("FieldWorker Complaint");
             if (!ModelState.IsValid)
             {
                 Console.WriteLine("Invalid model state");
